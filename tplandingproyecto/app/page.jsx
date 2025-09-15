@@ -111,6 +111,34 @@ export default function Home() {
             </div>
           </section>
 
+          <section className="w-[100vw] h-[30vh] bg-gray-100">
+              <h1 className="text-black text-2xl font-normal flex justify-center items-center">Download  the DiHy Care app now!</h1>
+          </section>
+
+          {/* Comida */}
+          <section className="h-[90vh] flex flex-row gap-4 p-4">
+            {/* Columna izquierda */}
+            <div className="flex flex-col h-full w-[50%] justify-center">
+              <h1 className="text-[#042222] text-2xl font-semibold mb-2">
+              Your diabetes/hipertension data, simply there.              </h1>
+              <p className="text-[#042222] text-start mb-6">
+              Welcome to DiHy care, the diabetes and hipertension management app made for people who struggle to organize themselves. <br />
+              Together, we made diabetes and hipertension suck less!
+              </p>
+
+              {/* Tarjetas de actividades */}
+              <div className="flex flex-col gap-3 items-center">
+              <button className="bg-[#3C7C94] text-white px-10 py-2 rounded-full hover:bg-[#2E5D70]">
+            Learn more
+          </button>
+              </div>
+            </div>
+
+            {/* Columna derecha (Calendario) */}
+            <div className="h-full w-[50%] flex items-center justify-center">
+              <img src="/comida.png" className="rounded-lg shadow-lg w-[40vw]" />
+            </div>
+          </section>
       </main>
     </div>
   );
