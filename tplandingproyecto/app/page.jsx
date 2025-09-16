@@ -216,8 +216,95 @@ export default function Home() {
               </ul>
             </div>
            </div>
-           
           </section>
+          {/* Contact Section */}
+          <section className="w-full h-[80vh] flex flex-row">
+            {/* Izquierda */}
+            <div className="w-1/2 bg-[#9ED4D4] flex flex-col justify-center items-center text-center p-10">
+              <h1 className="text-3xl font-semibold text-[#042222] mb-6">
+                We’d love to hear from you
+              </h1>
+              <img src="/CorazonOscuro.png" alt="Heart logo" className="w-40 h-40" />
+            </div>
+
+            {/* Derecha */}
+            <div className="w-1/2 bg-gray-100 flex flex-col justify-center p-10">
+              <h2 className="text-2xl font-bold text-[#042222] mb-6">Contact Us</h2>
+              <form className="flex flex-col gap-4">
+                <div className="flex gap-4">
+                  <input
+                    type="text"
+                    placeholder="Enter your first name" 
+                    className="w-1/2 p-2 border-1 border-black rounded-2xl text-black"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Enter your last name"
+                    className="w-1/2 p-2  border-1 border-black rounded-2xl text-black"
+                  />
+                </div>
+                <div className="flex gap-4">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="w-1/2 p-2  border-1 border-black rounded-2xl text-black"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Enter your phone number"
+                    className="w-1/2 p-2  border-1 border-black rounded-2xl text-black"
+                  />
+                </div>
+                <textarea
+                  placeholder="Enter your message"
+                  className="w-full p-2 border-1 border-black rounded-2xl h-24 text-black"
+                />
+                <button
+                  type="submit"
+                  className="bg-[#3C7C94] text-black py-2 px-6 rounded-full hover:bg-[#2E5D70] self-start"
+                >
+                  Submit
+                </button>
+              </form>
+              <p className="mt-4 text-sm text-[#042222]">
+                Email Us:{" "}
+                <a href="mailto:debarbara.ailen@gmail.com" className="underline">
+                  debarbara.ailen@gmail.com
+                </a>
+              </p>
+            </div>
+          </section>
+
+          {/* Footer */}
+          <footer className="w-full bg-[#3C7C94] py-6">
+            <div className="flex flex-col items-center justify-center gap-6">
+              <h2 className="text-white text-xl">Download the DiHy Care app now!</h2>
+              {/* Botones de descarga */}
+              <div className="flex gap-4">
+                <img src="/googleplay.png" alt="Google Play" className="h-12" />
+                <img src="/appstore.png" alt="App Store" className="h-12" />
+              </div>
+              {/* Íconos inferiores */}
+              <div className="flex flex-row gap-10 mt-6">
+                <div className="flex flex-col items-center text-white">
+                  <img src="/icon-contact.png" className="h-12 mb-2" />
+                  <p>Contact Us</p>
+                </div>
+                <div className="flex flex-col items-center text-white">
+                  <img src="/icon-heart.png" className="h-12 mb-2" />
+                  <p>Hypertension</p>
+                </div>
+                <div className="flex flex-col items-center text-white">
+                  <img src="/icon-lab.png" className="h-12 mb-2" />
+                  <p>More Info</p>
+                </div>
+                <div className="flex flex-col items-center text-white">
+                  <img src="/icon-diabetes.png" className="h-12 mb-2" />
+                  <p>Diabetes</p>
+                </div>
+              </div>
+            </div>
+          </footer>
 
       </main>
     </div>
