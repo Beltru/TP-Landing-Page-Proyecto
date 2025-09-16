@@ -41,8 +41,8 @@ export default function Home() {
         </section>
 
         {/* Creadores */}
-        <section className="w-[100vw] h-[50vh] flex items-center justify-center bg-white rounded-md shadow-inner mb-10">
-          <ul className="flex flex-row space-x-8">
+        <section className="w-[100vw] h-[50vh] flex items-center justify-center bg-white rounded-md mb-10">
+          <ul className="flex flex-row gap-10">
             <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Ailén de Barbará</p><p className="text-black">UX/UI</p></li>
             <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Beltrán Cid</p><p className="text-black">Front PC</p></li>
             <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Tomás Schiavone</p><p className="text-black">Full Stack</p></li>
@@ -120,9 +120,9 @@ export default function Home() {
             {/* Columna izquierda */}
             <div className="flex flex-col h-full w-[50%] justify-center">
               <h1 className="text-[#042222] text-2xl font-semibold mb-2">
-              Your diabetes/hipertension data, simply there.              </h1>
+              Your diabetes/hipertension data, simply there.</h1>
               <p className="text-[#042222] text-start mb-6">
-              Welcome to DiHy care, the diabetes and hipertension management app made for people who struggle to organize themselves. <br />
+              Welcome to DiHy care, the diabetes and hipertension management app made for people who struggle to organize themselves. <br /> <br />
               Together, we made diabetes and hipertension suck less!
               </p>
 
@@ -139,6 +139,55 @@ export default function Home() {
               <img src="/comida.png" className="rounded-lg shadow-lg w-[40vw]" />
             </div>
           </section>
+
+          <section className="w-[100vw] h-[30vh] bg-gray-100 flex flex-col justify-center items-center gap-4">
+              <ul className="flex flex-row gap-2 items-center">
+                <li className=""><img src="/flechaizq.png" className="" alt="Brazo"/></li>           
+                <li className=""><img src="/brazo.png" className="h-[20vh] w-auto" alt="Brazo"/></li>
+                <li className=""><img src="/glucometro.png" className="h-[20vh] w-auto"/></li>
+                <li className=""><img src="/todo.png" className="h-[20vh] w-auto"/></li>
+                <li className=""><img src="/flechader.png" className=""/></li>
+              </ul>
+            
+            <ul className="flex flex-row gap-2">
+            <li className="w-[20px] h-[20px] rounded-full bg-gray-500"></li>
+            <li className="w-[20px] h-[20px] rounded-full bg-blue-400"></li>
+            <li className="w-[20px] h-[20px] rounded-full bg-gray-500"></li>
+            </ul>
+          </section>
+
+          {/* About Section */}
+          <section className="w-full h-[90vh] flex flex-row items-center justify-center  px-12 py-8 gap-8">
+            {/* Texto */}
+            <div className="w-1/2 flex flex-col justify-center text-left">
+              <h1 className="text-[#042222] text-3xl font-bold mb-4">
+                Who we are and how it all began! <br /> 
+                <span className="text-[#3C7C94]">The story of DiHy Care.</span>
+              </h1>
+              <p className="text-[#042222] text-lg leading-relaxed mb-6">
+                Founded in 2025, DiHy Care is a digital health company that aims to 
+                simplify life with diabetes/hypertension. We give people the tools and 
+                confidence to ease the complexity of their daily routine. DiHy Care helps 
+                to monitor and manage your diabetes/hypertension with relevant information 
+                stored on your smartphone and ready to use. <br /><br />
+                Stay in charge of your health, manage your insulin intake, and take control 
+                of your diabetes/hypertension every day. In short, we aim to make your 
+                daily routine suck less.
+              </p>
+              <button className="bg-[#3C7C94] text-white px-8 py-2 rounded-full hover:bg-[#2E5D70] w-fit">
+                Learn More
+              </button>
+            </div>
+
+            {/* Imagen */}
+            <div className="w-1/2 flex items-center justify-center">
+              <img 
+                src="/about.png" 
+                className="rounded-lg shadow-lg w-[80%]" 
+              />
+            </div>
+          </section>
+
       </main>
     </div>
   );
