@@ -189,7 +189,7 @@ export default function Home() {
           </section>
 
          {/* Devices & Services Section */}
-          <section className="w-[100vw] h-[90vh] flex flex-row items-center justify-center px-12 py-8 gap-8">
+          <section className="w-[100vw] h-[70vh] flex flex-row items-center justify-center px-12 gap-8">
            <div className="bg-white w-[100vw] h-[70vh] flex flex-row items-center justify-center px-12 py-8 gap-8">
              {/* Imagen izquierda */}
             <div className="w-[50vw] h-[50vh] flex items-center justify-center">
@@ -198,7 +198,7 @@ export default function Home() {
 
             {/* Texto derecha */}
             <div className="w-[50vw] flex flex-col justify-center text-left">
-              <h1 className="text-[#042222] text-2xl font-bold mb-4">
+              <h1 className="text-[#042222] text-2xl font-bold">
                 Connecting your devices &amp; services
               </h1>
               <p className="text-[#042222] text-lg leading-relaxed mb-6">
@@ -217,8 +217,9 @@ export default function Home() {
             </div>
            </div>
           </section>
+          
           {/* Contact Section */}
-          <section className="w-full h-[80vh] flex flex-row">
+          <section className="w-[100vw] h-[80vh] flex flex-row">
             {/* Izquierda */}
             <div className="w-1/2 bg-[#9ED4D4] flex flex-col justify-center items-center text-center p-10">
               <h1 className="text-3xl font-semibold text-[#042222] mb-6">
@@ -228,7 +229,7 @@ export default function Home() {
             </div>
 
             {/* Derecha */}
-            <div className="w-1/2 bg-gray-100 flex flex-col justify-center p-10">
+            <div className="w-1/2 bg-[#D9D9D9] flex flex-col justify-center p-10">
               <h2 className="text-2xl font-bold text-[#042222] mb-6">Contact Us</h2>
               <form className="flex flex-col gap-4">
                 <div className="flex gap-4">
@@ -276,31 +277,30 @@ export default function Home() {
           </section>
 
           {/* Footer */}
-          <footer className="w-full bg-[#3C7C94] py-6">
-            <div className="flex flex-col items-center justify-center gap-6">
-              <h2 className="text-white text-xl">Download the DiHy Care app now!</h2>
+          <footer className="w-[100vw] h-[35vh] bg-[#3C7C94] py-6">
+            <div className="flex flex-row items-center justify-center gap-10">
+              <div className="flex flex-col gap-4"> 
+                <h2 className="text-black text-xl">Download the DiHy Care app now!</h2>
               {/* Botones de descarga */}
               <div className="flex gap-4">
                 <img src="/googleplay.png" alt="Google Play" className="h-12" />
-                <img src="/appstore.png" alt="App Store" className="h-12" />
+                <img src="/apple.png" alt="App Store" className="h-12" />
               </div>
+            </div>
+             
               {/* Íconos inferiores */}
               <div className="flex flex-row gap-10 mt-6">
                 <div className="flex flex-col items-center text-white">
-                  <img src="/icon-contact.png" className="h-12 mb-2" />
-                  <p>Contact Us</p>
+                  <img src="/contacto.png" className="h-[20vh] mb-2" />
                 </div>
                 <div className="flex flex-col items-center text-white">
-                  <img src="/icon-heart.png" className="h-12 mb-2" />
-                  <p>Hypertension</p>
+                  <img src="/corazon.png" className="h-[20vh] mb-2" />
                 </div>
                 <div className="flex flex-col items-center text-white">
-                  <img src="/icon-lab.png" className="h-12 mb-2" />
-                  <p>More Info</p>
+                  <img src="/frasco.png" className="h-[20vh] mb-2" />
                 </div>
                 <div className="flex flex-col items-center text-white">
-                  <img src="/icon-diabetes.png" className="h-12 mb-2" />
-                  <p>Diabetes</p>
+                  <img src="/gota.png" className="h-[20vh] mb-2" />
                 </div>
               </div>
             </div>
