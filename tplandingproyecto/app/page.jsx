@@ -188,6 +188,37 @@ export default function Home() {
             </div>
           </section>
 
+         {/* Devices & Services Section */}
+          <section className="w-[100vw] h-[90vh] flex flex-row items-center justify-center px-12 py-8 gap-8">
+           <div className="bg-white w-[100vw] h-[70vh] flex flex-row items-center justify-center px-12 py-8 gap-8">
+             {/* Imagen izquierda */}
+            <div className="w-[50vw] h-[50vh] flex items-center justify-center">
+              <img src="/devices.png"/>
+            </div>
+
+            {/* Texto derecha */}
+            <div className="w-[50vw] flex flex-col justify-center text-left">
+              <h1 className="text-[#042222] text-2xl font-bold mb-4">
+                Connecting your devices &amp; services
+              </h1>
+              <p className="text-[#042222] text-lg leading-relaxed mb-6">
+                At DiHy Care, we’re of the humble opinion that paper is for origami, not for logbooks. 
+                That’s why when you connect your diabetes device with DiHy Care, your connected meter 
+                will automatically log your blood sugar readings into the app. No need to bother 
+                flicking through pages anymore! Everything’s available in a few taps in the app.
+              </p>
+              <p className="text-[#042222] font-semibold mb-2">
+                Connection Brings Freedom!
+              </p>
+              <ul className="list-disc list-inside text-[#042222] text-lg space-y-1">
+                <li>Automatic data importing saves tons of time.</li>
+                <li>Connect your blood glucose meter and avoid manual logging errors.</li>
+              </ul>
+            </div>
+           </div>
+           
+          </section>
+
       </main>
     </div>
   );
