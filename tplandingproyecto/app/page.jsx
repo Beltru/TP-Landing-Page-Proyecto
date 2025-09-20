@@ -30,43 +30,63 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center justify-start bg-[#9ED4D4] text-center px-6 pt-32">
         
         {/* Hero Section */}
-        <section className="w-full h-[70vh] flex flex-col justify-center items-center mb-15">
-          <h1 className="text-[#042222] text-4xl font-bold mb-4">
+      <section className="relative w-full h-[70vh] flex flex-col justify-center items-center mb-15 bg-[#A7D6D8] overflow-hidden">
+          {/* Fondo con imágenes */}
+          <img
+            src="/tensiometro.png"
+            className="absolute left-5 top-1/2 transform -translate-y-1/2 w-[40vw] opacity-60"
+          />
+         
+          <img
+            src="cardiaco.png"
+            alt="Glucómetro"
+            className="absolute right-5 top-1/2 transform -translate-y-1/2 w-[20vw] opacity-60"
+          />
+
+          {/* Texto y botón */}
+          <h1 className="text-[#042222] text-4xl font-bold mb-4 relative z-10">
             Welcome to DiHy Care
           </h1>
-          <p className="text-gray-800 mb-6">Your health, our priority</p>
-          <button className="bg-[#3C7C94] text-white px-8 py-2 rounded-full hover:bg-[#2E5D70]">
+          <p className="text-gray-800 mb-6 relative z-10">Your health, our priority</p>
+          <button className="bg-[#3C7C94] text-white px-8 py-2 rounded-full hover:bg-[#2E5D70] relative z-10">
             Get Started
           </button>
         </section>
 
+
         {/* Creadores */}
-        <section className="w-[100vw] h-[50vh] flex items-center justify-center bg-white rounded-md mb-10">
-          <ul className="flex flex-row gap-10">
-            <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Ailén de Barbará</p><p className="text-black">UX/UI</p></li>
-            <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Beltrán Cid</p><p className="text-black">Front PC</p></li>
-            <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Tomás Schiavone</p><p className="text-black">Full Stack</p></li>
-            <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Iara Genco</p><p className="text-black">Back End</p></li>
-            <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Thiago Schiera</p><p className="text-black">Front Mobile</p></li>
-          </ul>
+        <section className="w-[100vw] h-[120vh] flex items-center justify-center bg-white rounded-md mb-10">
+          <div className="flex flex-col items-center justify-center">
+            <ul className="flex flex-row gap-10">
+              <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Ailén de Barbará</p><p className="text-black">UX/UI</p></li>
+              <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Beltrán Cid</p><p className="text-black">Front PC</p></li>
+              <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Tomás Schiavone</p><p className="text-black">Full Stack</p></li>
+              
+            </ul>
+            <ul className="flex flex-row gap-10">
+              <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Iara Genco</p><p className="text-black">Back End</p></li>
+              <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Thiago Schiera</p><p className="text-black">Front Mobile</p></li>
+            </ul>
+          </div>
+         
         </section>
 
          {/* Grafico */}
-        <section className="w-full h-[62vh] flex items-center justify-center rounded-md shadow-inner mb-2 gap-2">
-          <div className="w-1/2 h-full flex items-center justify-center">
-           <img src="/image34.png" alt="Glucose chart" className="object-contain h-full" />
-          </div>
-
-         <div className="w-1/2 h-full bg-[#D9D9D9] flex flex-col justify-center items-center text-center p-6">
+        <section className="w-full h-[100vh] flex items-center justify-center rounded-md  mb-2 gap-2">
+         <div className="w-1/2 h-[63vh] bg-[#D9D9D9] flex flex-col justify-center items-center text-center p-6">
             <h1 className="text-4xl font-bold text-[#042222] leading-snug mb-6">
              The best way <br /> to track your health.
             </h1>
             <img src="/CorazonOscuro.png" alt="Logo" className="w-40 h-40" />
          </div>
+         
+         <div className="w-1/2 h-full flex items-center justify-center">
+           <img src="/image34.png" alt="Glucose chart" className="object-contain h-full" />
+          </div>
         </section>
 
          {/* Calendario */}
-         <section className="h-[90vh] flex flex-row gap-4 p-4">
+         <section className="h-[100vh] flex flex-row gap-4 p-4">
             {/* Columna izquierda */}
             <div className="flex flex-col h-full w-[50%] justify-center">
               <h1 className="text-[#042222] text-2xl font-semibold mb-2">
@@ -111,12 +131,15 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="w-[100vw] h-[30vh] bg-gray-100">
-              <h1 className="text-black text-2xl font-normal flex justify-center items-center">Download  the DiHy Care app now!</h1>
+          <section className="w-[100vw] h-[30vh] bg-gray-100 flex flex-row items-center justify-center gap-4">
+              <h1 className="text-black text-2xl font-bold flex justify-center items-center">Download  the DiHy Care app now!</h1>
+              <button className="bg-[#3C7C94] text-white px-12 py-2 rounded-full hover:bg-[#2E5D70]">
+                  Click here!
+              </button>
           </section>
 
           {/* Comida */}
-          <section className="h-[90vh] flex flex-row gap-4 p-4">
+          <section className="h-[100vh] flex flex-row gap-4 p-4">
             {/* Columna izquierda */}
             <div className="flex flex-col h-full w-[50%] justify-center">
               <h1 className="text-[#042222] text-2xl font-semibold mb-2">
@@ -157,7 +180,7 @@ export default function Home() {
           </section>
 
           {/* About Section */}
-          <section className="w-full h-[90vh] flex flex-row items-center justify-center  px-12 py-8 gap-8">
+          <section className="w-full h-[100vh] flex flex-row items-center justify-center  px-12 py-8 gap-8">
             {/* Texto */}
             <div className="w-1/2 flex flex-col justify-center text-left">
               <h1 className="text-[#042222] text-3xl font-bold mb-4">
@@ -189,8 +212,8 @@ export default function Home() {
           </section>
 
          {/* Devices & Services Section */}
-          <section className="w-[100vw] h-[70vh] flex flex-row items-center justify-center px-12 gap-8">
-           <div className="bg-white w-[100vw] h-[70vh] flex flex-row items-center justify-center px-12 py-8 gap-8">
+          <section className="w-[100vw] h-[100vh] flex flex-row items-center justify-center px-12 gap-8">
+           <div className="bg-white w-[100vw] h-[100vh] flex flex-row items-center justify-center px-12 py-8 gap-8">
              {/* Imagen izquierda */}
             <div className="w-[50vw] h-[50vh] flex items-center justify-center">
               <img src="/devices.png"/>
