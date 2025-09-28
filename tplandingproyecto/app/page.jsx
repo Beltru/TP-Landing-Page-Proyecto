@@ -57,6 +57,7 @@ export default function Home() {
         {/* Creadores */}
         <section className="w-[100vw] h-[120vh] flex items-center justify-center bg-white rounded-md mb-10">
           <div className="flex flex-col items-center justify-center">
+            <h1 className="text-4xl font-bold text-black mb-6">A little about our founders...</h1>  
             <ul className="flex flex-row gap-10">
               <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Ailén de Barbará</p><p className="text-black">UX/UI</p></li>
               <li className="flex flex-col"><img src="/account_box.png"/><p className="text-xl text-black font-bold">Beltrán Cid</p><p className="text-black">Front PC</p></li>
